@@ -1,0 +1,17 @@
+/** Favorite Books:
+A Boy Called It Series (3) 
+Gianna (2)
+The Mortal Instruments (4)
+Fallen Series (5)
+Twilight Series (6)
+Temperance Brennan Series (1)
+**/
+
+CREATE TABLE favoritebooks (id INTEGER PRIMARY KEY, name TEXT, rating  INTEGER );
+INSERT INTO favoritebooks VALUES (1,"Temperance Brennan Series" , 100);
+INSERT INTO favoritebooks VALUES (2, "Gianna" , 98 );
+INSERT INTO favoritebooks VALUES (3, "A Boy Called It Series" , 98 );
+INSERT INTO favoritebooks VALUES (4, "The Mortal Instruments" , 100 );
+INSERT INTO favoritebooks VALUES (5, "Fallen Series" , 96 );
+INSERT INTO favoritebooks VALUES (6, "Twilight Series" , 96 );
+SELECT * FROM favoritebooks ORDER BY rating;
