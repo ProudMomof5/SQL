@@ -1,0 +1,19 @@
+
+CREATE TABLE BooksAndMore (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, sold INTEGER);
+INSERT INTO BooksAndMore VALUES (1, "Autobiographies", 96, 5.00, 15);
+INSERT INTO BooksAndMore VALUES (2, "Fiction", 182, 2.50, 97);
+INSERT INTO BooksAndMore VALUES (3, "NonFiciton", 56, 3.00, 12);
+INSERT INTO BooksAndMore VALUES (4, "Mysteries", 200, 4.00, 102);
+INSERT INTO BooksAndMore VALUES (5, "Coloring", 40, 1.50, 10);
+INSERT INTO BooksAndMore VALUES (6, "Romance", 167, 2.50, 44);
+SELECT * FROM BooksAndMore WHERE sold >2.00 ORDER BY price;
+
+/**BooksAndMore:
+Autobiographies (96, 5.00, 15);
+Fiction (182, 2.50, 97)
+NonFiction (56, 3.00, 12)
+Mysteries (200, 4.00, 102)
+Coloring (40, 1.50, 10)
+Romance (167, 2.50, 44);
+
+SELECT * FROM BooksAndMore ORDER BY price
